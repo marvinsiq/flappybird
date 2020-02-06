@@ -23,4 +23,13 @@ public class Pontuacao : MonoBehaviour
         pontos = 0;
         this.textoPontuacao.text = "0";
     }
+
+    public void SalvarRecord()
+    {
+        int melhorPontuacao = PlayerPrefs.GetInt("Record");
+        Debug.Log("Melhor pontuação: " + melhorPontuacao);
+        if (this.pontos > melhorPontuacao ) { 
+            PlayerPrefs.SetInt("Record", this.pontos);
+        }
+    }
 }
