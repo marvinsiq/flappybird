@@ -24,6 +24,8 @@ public class Diretor : MonoBehaviour
 
         this.aviao.ResetGame();
 
+        this.pontuacao.ResetGame();
+
         Obstaculo[] obstaculos = GameObject.FindObjectsOfType<Obstaculo>();
         foreach (Obstaculo obstaculo in obstaculos)
         {

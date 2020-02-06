@@ -50,5 +50,6 @@ public class Aviao : MonoBehaviour
     {
         this.transform.position = posicaoInicial;
         this.fisica.simulated = true;
+        this.fisica.velocity = Vector2.zero;
     }
 }

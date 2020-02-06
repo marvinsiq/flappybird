@@ -17,7 +17,7 @@ public class Carrossel : MonoBehaviour
         this.posicaoInicial = this.transform.position;
         float tamanhoImagem = this.GetComponent<SpriteRenderer>().size.x;
         float escala = this.transform.localScale.x;
-        this.tamanhoRealImagem = tamanhoImagem * escala;
+        this.tamanhoRealImagem = tamanhoImagem  * escala;
     }
 
     // Update is called once per frame
